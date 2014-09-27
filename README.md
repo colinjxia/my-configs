@@ -1,4 +1,8 @@
-myconfigs
-=========
+##my-configs
 
-My personal configuration files
+My persoanl configuration files
+
+- Sublime Text2
+- MacVim
+- WebStrom
+- Mou
