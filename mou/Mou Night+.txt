@@ -8,29 +8,29 @@ foreground: ffffff
 background: 364C6E
 
 H1
-foreground: 8d7cd2
+foreground: 66cccc
 font-style: bold
 font-size: 24px
 
 H2
-foreground: 8d7cd2
+foreground: 66cccc
 font-style: bold
 font-size: 20px
 
 H3
-foreground: 8d7cd2
+foreground: 66cccc
 font-size: 17px
 
 H4
-foreground: 8d7cd2
+foreground: 66cccc
 font-size: 15px
 
 H5
-foreground: 8d7cd2
+foreground: 66cccc
 font-size: 13px
 
 H6
-foreground: 8d7cd2
+foreground: 66cccc
 font-size: 11px
 
 EMPH
@@ -66,10 +66,10 @@ IMAGE
 foreground: 85d065
 
 CODE
-foreground: cf009a
+foreground: 999999
 
 VERBATIM
-foreground: cf009a
+foreground: 999999
 
 HTML_ENTITY
 foreground: 6c71c4
