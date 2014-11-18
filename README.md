@@ -6,3 +6,4 @@ My persoanl configuration files
 - MacVim
 - WebStrom
 - Mou
+- Xcode
