@@ -1,0 +1,12 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	
+	"font_face": "Source Code Pro",
+	"font_size": 14.5,
+
+	// Show folders in the side bar in bold
+    "bold_folder_labels": 	true,
+	
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
+}
