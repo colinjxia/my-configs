@@ -1,12 +1,25 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
-	
-	"font_face": "Source Code Pro",
-	"font_size": 14.5,
+    "bold_folder_labels": true,
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+    "font_face": "Source Code Pro",
+    "font_size": 14.5,
+    "ignored_packages":
+    [
+        "Vintage"
+    ],
+    "line_padding_bottom": 1,
+    "line_padding_top": 1,
 
-	// Show folders in the side bar in bold
-    "bold_folder_labels": 	true,
-	
-	"line_padding_bottom": 1,
-	"line_padding_top": 1,
+    // Always visualise the viewport on the minimap, as opposed to only
+    // showing it on mouse over
+    "always_show_minimap_viewport": true,
+
+    // 在 Finder 里打开文件时, 不会新开窗口了
+    "open_files_in_new_window": false, 
+
+    // Set to true to insert spaces when tab is pressed
+    "translate_tabs_to_spaces": true
+
+    // 插件列表
+    // AutoFileName     Pretty JSON     SideBarEnhancements     Terminal    CodeFormatter
 }
