@@ -15,6 +15,8 @@
 	</data>
 	<key>BlinkText</key>
 	<false/>
+	<key>CursorBlink</key>
+	<true/>
 	<key>CursorColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -25,7 +27,7 @@
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
 	</data>
 	<key>CursorType</key>
-	<integer>1</integer>
+	<integer>0</integer>
 	<key>Font</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGGBlYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
@@ -37,6 +39,8 @@
 	</data>
 	<key>FontAntialias</key>
 	<true/>
+	<key>FontHeightSpacing</key>
+	<integer>1</integer>
 	<key>FontWidthSpacing</key>
 	<real>1.004032258064516</real>
 	<key>ProfileCurrentVersion</key>
@@ -44,14 +48,24 @@
 	<key>SelectionColor</key>
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
-	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECgw
-	LjA1MTg5NzE4NTQ3IDAuMjExNTkzOTUxNCAwLjI2MzQ1NDg2MTEAEAGAAtIQERITWiRj
-	bGFzc25hbWVYJGNsYXNzZXNXTlNDb2xvcqISFFhOU09iamVjdF8QD05TS2V5ZWRBcmNo
-	aXZlctEXGFRyb290gAEIERojLTI3O0FITltijY+RlqGqsrW+0NPYAAAAAAAAAQEAAAAA
-	AAAAGQAAAAAAAAAAAAAAAAAAANo=
+	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECYw
+	LjEyOTAzODk3ODMgMC4yNzE3NDkyNzczIDAuMzU5MDc5MDcyABABgALSEBESE1okY2xh
+	c3NuYW1lWCRjbGFzc2VzV05TQ29sb3KiEhRYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2
+	ZXLRFxhUcm9vdIABCBEaIy0yNztBSE5bYouNj5SfqLCzvM7R1gAAAAAAAAEBAAAAAAAA
+	ABkAAAAAAAAAAAAAAAAAAADY
 	</data>
-	<key>ShowWindowSettingsNameInTitle</key>
+	<key>ShowActiveProcessInTitle</key>
 	<true/>
+	<key>ShowCommandKeyInTitle</key>
+	<false/>
+	<key>ShowDimensionsInTitle</key>
+	<false/>
+	<key>ShowShellCommandInTitle</key>
+	<false/>
+	<key>ShowTTYNameInTitle</key>
+	<false/>
+	<key>ShowWindowSettingsNameInTitle</key>
+	<false/>
 	<key>TerminalType</key>
 	<string>xterm-256color</string>
 	<key>TextBoldColor</key>
@@ -67,7 +81,7 @@
 	<data>
 	YnBsaXN0MDDUAQIDBAUGFRZYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3AS
 	AAGGoKMHCA9VJG51bGzTCQoLDA0OVU5TUkdCXE5TQ29sb3JTcGFjZVYkY2xhc3NPECcw
-	LjQ0MDU4MDI0ODggMC41MDk2MjkzMDkyIDAuNTE2ODU3OTgxNwAQAYAC0hAREhNaJGNs
+	LjY2MTMxMDQxMDcgMC43NjA3ODY5MDYyIDAuNzc1MjAzMTUyMQAQAYAC0hAREhNaJGNs
 	YXNzbmFtZVgkY2xhc3Nlc1dOU0NvbG9yohIUWE5TT2JqZWN0XxAPTlNLZXllZEFyY2hp
 	dmVy0RcYVHJvb3SAAQgRGiMtMjc7QUhOW2KMjpCVoKmxtL3P0tcAAAAAAAABAQAAAAAA
 	AAAZAAAAAAAAAAAAAAAAAAAA2Q==
@@ -127,7 +141,7 @@
 	ZmZmg1MTpj6DeHnQPoPQg+A+AYY=
 	</data>
 	<key>columnCount</key>
-	<integer>120</integer>
+	<integer>110</integer>
 	<key>cyanColour</key>
 	<data>
 	BAtzdHJlYW10eXBlZIHoA4QBQISEhAdOU0NvbG9yAISECE5TT2JqZWN0AIWEAWMBhARm
@@ -153,7 +167,7 @@
 	ZmZmg6i7UT+DUATePYMl2hA+AYY=
 	</data>
 	<key>rowCount</key>
-	<integer>30</integer>
+	<integer>55</integer>
 	<key>type</key>
 	<string>Window Settings</string>
 	<key>whiteColour</key>

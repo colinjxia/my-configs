@@ -23,7 +23,7 @@ ZSH_THEME="robbyrussell"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -52,14 +52,12 @@ plugins=(git)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export CLICOLOR=1
-
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/Jinchun/Development/cocos2d-x-3.5/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.7/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/Jinchun/Development/cocos2d-x-3.5/templates
+export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.7/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 alias mysql='/usr/local/mysql/bin/mysql'
@@ -67,6 +65,10 @@ alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
 
 export PATH=/usr/local/mongodb/bin:$PATH
 
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
+export M2_HOME=/usr/local/maven
+
+export PATH=$M2_HOME/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
