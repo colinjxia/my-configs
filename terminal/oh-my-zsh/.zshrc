@@ -53,20 +53,19 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.7/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.7/templates
+export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
-alias mysql='/usr/local/mysql/bin/mysql'
-alias mysqladmin='/usr/local/mysql/bin/mysqladmin'
+export MYSQL='/usr/local/mysql/bin'
+export MONGODB='/usr/local/mongodb/bin'
+export PATH=$MYSQL:$MONGODB:$PATH
 
-export PATH=/usr/local/mongodb/bin:$PATH
-
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home
-export M2_HOME=/usr/local/maven
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home'
+export M2_HOME='/usr/local/maven'
 
 export PATH=$M2_HOME/bin:$PATH
 source $ZSH/oh-my-zsh.sh
