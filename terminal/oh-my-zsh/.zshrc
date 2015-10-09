@@ -5,7 +5,7 @@ export ZSH=/Users/Jinchun/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="my"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -53,11 +53,11 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8.1/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8/templates
+export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8.1/templates
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 export MYSQL='/usr/local/mysql/bin'
@@ -94,3 +94,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
+alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+# ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
