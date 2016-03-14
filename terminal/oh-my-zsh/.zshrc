@@ -61,13 +61,13 @@ export COCOS_TEMPLATES_ROOT=/Applications/Cocos/frameworks/cocos2d-x-3.8.1/templ
 export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 export MYSQL='/usr/local/mysql/bin'
-export MONGODB='/usr/local/mongodb/bin'
-export PATH=$MYSQL:$MONGODB:$PATH
+export PATH=$MYSQL:$PATH
 
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home'
 export M2_HOME='/usr/local/maven'
-
 export PATH=$M2_HOME/bin:$PATH
+
+export GEM_HOME='/usr/local/bin'
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -95,4 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias mongodstart="mongod --config /usr/local/etc/mongod.conf --fork"
 # ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+# alias npm=cnpm
+# alias node='node --harmony'
