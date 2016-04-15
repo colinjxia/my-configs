@@ -68,6 +68,12 @@ export M2_HOME='/usr/local/maven'
 export PATH=$M2_HOME/bin:$PATH
 
 export GEM_HOME='/usr/local/bin'
+
+export http_proxy=http://127.0.0.1:6152/
+export https_proxy=http://127.0.0.1:6152/
+
+export HOMEBREW_GITHUB_API_TOKEN=e7d3c2379c68c0c0f63cba8eb8690cb335ad4559
+
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
