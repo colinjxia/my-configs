@@ -1,0 +1,29 @@
+{
+  "always_show_minimap_viewport": true,
+  "auto_complete_with_fields": true,
+  "bold_folder_labels": true,
+  "color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+  "font_face": "Source Code Pro",
+  "font_size": 15.5,
+  "ignored_packages":
+  [
+    "JavaScript",
+    "Makefile",
+    "Vintage"
+  ],
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+
+  // 在 Finder 里打开文件时, 不会新开窗口了
+  "open_files_in_new_window": false,
+
+  "tab_size": 2,
+
+  // Set to true to insert spaces when tab is pressed
+  "translate_tabs_to_spaces": true
+}
+
+// 插件列表
+// AutoFileName     Pretty JSON     SideBarEnhancements     Terminal    CodeFormatter
+// Emmet            Alignment       FileSystem Autocomplete HTMLPretty     
+// All Autocomplement    

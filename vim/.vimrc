@@ -2,7 +2,7 @@
 set number
 
 " 语法高亮
-syntax on
+syntax enable
 
 "依文件类型设置自动缩进
 filetype indent plugin on
@@ -20,13 +20,13 @@ set fenc=utf-8
 set fileencodings=utf-8,gb2312,gb18030,big5
 
 "设置背景色
-"set background=gray
+"set background=dark
 
 "设置颜色主题
-"colorscheme monokai
+"colorscheme solarized
 
 " 设置透明度
-" set transparency=10
+"set transparency=10
 
 " 高亮显示匹配的括号 
 set showmatch
@@ -48,4 +48,3 @@ inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
 inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
-
