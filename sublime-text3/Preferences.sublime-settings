@@ -17,7 +17,7 @@
   // 在 Finder 里打开文件时, 不会新开窗口了
   "open_files_in_new_window": false,
 
-  "tab_size": 2,
+  "tab_size": 4,
 
   // Set to true to insert spaces when tab is pressed
   "translate_tabs_to_spaces": true
