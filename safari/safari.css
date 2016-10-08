@@ -1,0 +1,19 @@
+/** {
+    font-family: Helvetica !important;
+}
+*/
+
+html {
+    zoom: 100%;
+    // -webkit-font-smoothing: antialiased !important;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    -webkit-text-stroke: 0.1px;
+}
+
+// 微博样式
+
+// div#Box_right, #pl_content_biztips, #plc_main>.WB_main_r, div[node-type="feed_spread"], #v6_pl_ad_bottomtip, #v6_pl_content_biztips {display:none !important;}
+// .W_func,div[feedtype="ad"], body .footer_adv {display: none !important}
+
+// body .WB_main_c {width: 95% !important;margin: 0 !important;}
+// .WB_tab_a>.clearfix {background-color: #fff !important;}

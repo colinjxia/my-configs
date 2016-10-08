@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Jinchun/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -79,7 +79,7 @@ export PATH=$M2_HOME/bin:$PATH
 
 export GEM_HOME='/usr/local/bin'
 
-export HOMEBREW_GITHUB_API_TOKEN=e7d3c2379c68c0c0f63cba8eb8690cb335ad4559
+# export HOMEBREW_GITHUB_API_TOKEN=e7d3c2379c68c0c0f63cba8eb8690cb335ad4559
 
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$PATH"
