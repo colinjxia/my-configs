@@ -51,17 +51,20 @@ plugins=(git)
 
 # User configuration
 
+export all_PROXY="socks5://127.0.0.1:6153"
 export http_proxy="http://127.0.0.1:6152"
 export https_proxy="http://127.0.0.1:6152"
 
 # where proxy
 surge_proxy () {
+		export all_PROXY="socks5://127.0.0.1:6153"
 		export http_proxy="http://127.0.0.1:6152"
 		export https_proxy="http://127.0.0.1:6152"
 	 	echo "HTTP Proxy on"
 }
 # where noproxy
 surge_noproxy () {
+		unset all_proxy
 		unset http_proxy
 	 	unset https_proxy
 	 	echo "HTTP Proxy off"
@@ -73,7 +76,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 export MYSQL='/usr/local/mysql/bin'
 export PATH=$MYSQL:$PATH
 
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home'
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_112.jdk/Contents/Home'
 export M2_HOME='/usr/local/maven'
 export PATH=$M2_HOME/bin:$PATH
 
@@ -113,16 +116,16 @@ export NODE_PATH=/usr/local/lib/node_modules
 alias ohmyzsh="mate ~/.oh-my-zsh"
 alias subl="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias mongodstart="mongod --config /usr/local/etc/mongod.conf --fork"
-alias cnpm="npm --registry=https://registry.npm.taobao.org --disturl=https://npm.taobao.org/mirrors/node"
 
-# Add environment variable COCOS_X_ROOT for cocos2d-x
-export COCOS_X_ROOT=/Users/Jinchun/Development
-export PATH=$COCOS_X_ROOT:$PATH
+export ANT_ROOT=/Users/Jinchun/Development/cocos/apache-ant-1.9.7/bin
+export NDK_ROOT=/Users/Jinchun/Development/cocos/android-ndk-r10e
+export ANDROID_SDK_ROOT=/Users/Jinchun/Library/Android/sdk
 
-# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
-export COCOS_TEMPLATES_ROOT=/Users/Jinchun/Development/cocos2d-x-3.12/templates
-export PATH=$COCOS_TEMPLATES_ROOT:$PATH
+export PATH=$ANT_ROOT:$NDK_PATH:$ANDROID_SDK_ROOT:$PATH
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/Jinchun/Development/cocos2d-x-3.12/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Users/Jinchun/Development/cocos/cocos2d-x-lite/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add yarn global bin
+export PATH=$(yarn global bin):$PATH
