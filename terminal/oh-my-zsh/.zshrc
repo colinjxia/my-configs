@@ -51,15 +51,15 @@ plugins=(git)
 
 # User configuration
 
-export all_PROXY="socks5://127.0.0.1:6153"
-export http_proxy="http://127.0.0.1:6152"
-export https_proxy="http://127.0.0.1:6152"
+export all_PROXY="socks5://127.0.0.1:8889"
+export http_proxy="http://127.0.0.1:8888"
+export https_proxy="http://127.0.0.1:8888"
 
 # where proxy
 surge_proxy () {
-		export all_PROXY="socks5://127.0.0.1:6153"
-		export http_proxy="http://127.0.0.1:6152"
-		export https_proxy="http://127.0.0.1:6152"
+		export all_PROXY="socks5://127.0.0.1:8889"
+		export http_proxy="http://127.0.0.1:8888"
+		export https_proxy="http://127.0.0.1:8888"
 	 	echo "HTTP Proxy on"
 }
 # where noproxy
@@ -128,4 +128,5 @@ export COCOS_CONSOLE_ROOT=/Users/Jinchun/Development/cocos/cocos2d-x-lite/tools/
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 # Add yarn global bin
-export PATH=$(yarn global bin):$PATH
+# export PATH=$(yarn global bin):$PATH
+export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
