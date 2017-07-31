@@ -12,5 +12,21 @@
     {
         "key": "shift+cmd+]",
         "command": "workbench.action.switchWindow"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "-workbench.action.navigateBack"
+    },
+    {
+        "key": "ctrl+]",
+        "command": "workbench.action.navigateForward"
+    },
+    {
+        "key": "ctrl+shift+-",
+        "command": "-workbench.action.navigateForward"
     }
 ]

@@ -14,7 +14,7 @@
         "dropdown.border": "#181A1F",
         "editor.background": "#21252B",
         "editor.lineHighlightBackground": "#363C48",
-        "editor.selectionBackground": "#444B5A",
+        "editor.selectionBackground": "#3E4451",
         "editorCursor.foreground": "#528BFF",
         "editorGroup.background": "#282C34",
         "editorGroup.border": "#181A1F",
@@ -1200,7 +1200,15 @@
             "name": "[VSCODE-CUSTOM] JS/TS Import",
             "scope": [
                 "constant.language.import-export-all.js",
-                "constant.language.import-export-all.ts",
+                "constant.language.import-export-all.ts"
+            ],
+            "settings": {
+                "foreground": "#E06C75"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JSX/TSX Import",
+            "scope": [
                 "constant.language.import-export-all.jsx",
                 "constant.language.import-export-all.tsx"
             ],
@@ -1278,10 +1286,133 @@
             }
         },
         {
+            "name": "[VSCODE-CUSTOM] JS/TS Type Module",
+            "scope": "entity.name.type.module.js,entity.name.type.module.ts,entity.name.type.module.jsx,entity.name.type.module.tsx",
+            "settings": {
+                "foreground": "#98C379"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Meta Class",
+            "scope": "meta.class.js,meta.class.ts,meta.class.jsx,meta.class.tsx",
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Property Definition Variable",
+            "scope": [
+                "meta.definition.property.js variable",
+                "meta.definition.property.ts variable",
+                "meta.definition.property.jsx variable",
+                "meta.definition.property.tsx variable"
+            ],
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Meta Type Parameters Type",
+            "scope": [
+                "meta.type.parameters.js support.type",
+                "meta.type.parameters.jsx support.type",
+                "meta.type.parameters.ts support.type",
+                "meta.type.parameters.tsx support.type"
+            ],
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Meta Tag Keyword Operator",
+            "scope": [
+                "source.js meta.tag.js keyword.operator",
+                "source.jsx meta.tag.jsx keyword.operator",
+                "source.ts meta.tag.ts keyword.operator",
+                "source.tsx meta.tag.tsx keyword.operator"
+            ],
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Meta Tag Punctuation",
+            "scope": [
+                "meta.tag.js punctuation.section.embedded",
+                "meta.tag.jsx punctuation.section.embedded",
+                "meta.tag.ts punctuation.section.embedded",
+                "meta.tag.tsx punctuation.section.embedded"
+            ],
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] JS/TS Meta Array Literal Variable",
+            "scope": [
+                "meta.array.literal.js variable",
+                "meta.array.literal.jsx variable",
+                "meta.array.literal.ts variable",
+                "meta.array.literal.tsx variable"
+            ],
+            "settings": {
+                "foreground": "#E5C07B"
+            }
+        },
+        {
             "name": "[VSCODE-CUSTOM] Python Constants",
             "scope": "source.python constant",
             "settings": {
                 "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Fields",
+            "scope": "entity.name.variable.field.cs",
+            "settings": {
+                "foreground": "#E06C75"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Keyword Operators",
+            "scope": "source.cs keyword.operator",
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Variables",
+            "scope": "variable.other.readwrite.cs",
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Variables Other",
+            "scope": "variable.other.object.cs",
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Property Other",
+            "scope": "variable.other.object.property.cs",
+            "settings": {
+                "foreground": "#ABB2BF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Property",
+            "scope": "entity.name.variable.property.cs",
+            "settings": {
+                "foreground": "#61AFEF"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] CSharp Storage Type",
+            "scope": "storage.type.cs",
+            "settings": {
+                "foreground": "#E5C07B"
             }
         },
         {
@@ -1440,6 +1571,13 @@
             "scope": "punctuation.definition.variable.php",
             "settings": {
                 "foreground": "#E06C75"
+            }
+        },
+        {
+            "name": "[VSCODE-CUSTOM] PHP Meta Class",
+            "scope": "meta.class.php",
+            "settings": {
+                "foreground": "#ABB2BF"
             }
         }
     ],

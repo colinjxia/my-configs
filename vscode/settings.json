@@ -1,15 +1,28 @@
 {
-    "workbench.welcome.enabled": false,
+    "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Source Code Pro",
-    "editor.fontSize": 15.4,
+    "editor.fontSize": 15.3,
     "editor.minimap.enabled": true,
     "editor.renderIndentGuides": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Atom One Dark",
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 4,
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.sideBar.location": "left",
     "window.zoomLevel": 0,
-    "window.nativeTabs": true
+    "window.nativeTabs": true,
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "vscode-icons",
+
+    // Number of spaces it should use per tab
+    // "prettier.tabWidth": 4,
+
+    // "beautify.config": {
+    //     "e4x": true,
+    //     "brace_style": "collapse,preserve-inline",
+    //     "keep_array_indentation": false
+    // },
+    "typescript.check.npmIsInstalled": false,
+    "files.associations": {
+        "*.js": "javascriptreact"
+    }
 }
