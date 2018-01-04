@@ -51,24 +51,22 @@ plugins=(git)
 
 # User configuration
 
-# export all_proxy="socks://127.0.0.1:8889"
-export http_proxy="http://127.0.0.1:8888"
-export https_proxy="http://127.0.0.1:8888"
-
 # where proxy
-surge_proxy () {
-	 #  export all_proxy="socks://127.0.0.1:8889"
-		export http_proxy="http://127.0.0.1:8888"
-		export https_proxy="http://127.0.0.1:8888"
+surge_proxy_on () {
+		export https_proxy=http://127.0.0.1:8888;
+		export http_proxy=http://127.0.0.1:8888;
+		export all_proxy=socks5://127.0.0.1:8889
 	 	echo "HTTP Proxy on"
 }
 # where noproxy
-surge_noproxy () {
-		# unset all_proxy
+surge_proxy_off () {
+    unset all_proxy
 		unset http_proxy
 	 	unset https_proxy
 	 	echo "HTTP Proxy off"
 }
+
+# surge_proxy_on
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -131,5 +129,6 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # export PATH=$(yarn global bin):$PATH
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
-# Boostinsider
-alias bi_deploy_ssh='ssh -o ProxyCommand="nc -x 127.0.0.1:8889 %h %p" -o ServerAliveInterval=60 -i ~/.ssh/boostinsider-prod.pem ubuntu@35.167.144.3'
+source "/Users/Jinchun/Development/google-cloud-sdk/path.zsh.inc"
+
+ulimit -n 500000 unlimited
