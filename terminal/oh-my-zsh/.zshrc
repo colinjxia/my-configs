@@ -51,20 +51,20 @@ plugins=(git)
 
 # User configuration
 
-export all_PROXY="socks5://127.0.0.1:8889"
+# export all_proxy="socks://127.0.0.1:8889"
 export http_proxy="http://127.0.0.1:8888"
 export https_proxy="http://127.0.0.1:8888"
 
 # where proxy
 surge_proxy () {
-		export all_PROXY="socks5://127.0.0.1:8889"
+	 #  export all_proxy="socks://127.0.0.1:8889"
 		export http_proxy="http://127.0.0.1:8888"
 		export https_proxy="http://127.0.0.1:8888"
 	 	echo "HTTP Proxy on"
 }
 # where noproxy
 surge_noproxy () {
-		unset all_proxy
+		# unset all_proxy
 		unset http_proxy
 	 	unset https_proxy
 	 	echo "HTTP Proxy off"
@@ -88,7 +88,7 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH="~/Library/Android/sdk/tools:~/Library/Android/sdk/platform-tools:$PATH"
 source $ZSH/oh-my-zsh.sh
 
-export NODE_PATH=/usr/local/lib/node_modules
+# export NODE_PATH=/usr/local/lib/node_modules
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -130,3 +130,6 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # Add yarn global bin
 # export PATH=$(yarn global bin):$PATH
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
+
+# Boostinsider
+alias bi_deploy_ssh='ssh -o ProxyCommand="nc -x 127.0.0.1:8889 %h %p" -o ServerAliveInterval=60 -i ~/.ssh/boostinsider-prod.pem ubuntu@35.167.144.3'
