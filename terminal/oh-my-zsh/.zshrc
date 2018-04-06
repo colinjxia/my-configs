@@ -47,7 +47,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-syntax-highlighting)
 
 # User configuration
 
@@ -66,7 +66,7 @@ surge_proxy_off () {
 	 	echo "HTTP Proxy off"
 }
 
-# surge_proxy_on
+export https_proxy=http://127.0.0.1:8888;export http_proxy=http://127.0.0.1:8888;export all_proxy=socks5://127.0.0.1:8889;
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -129,6 +129,13 @@ export PATH=$COCOS_CONSOLE_ROOT:$PATH
 # export PATH=$(yarn global bin):$PATH
 export PATH=$HOME/.config/yarn/global/node_modules/.bin:$PATH
 
-source "/Users/Jinchun/Development/google-cloud-sdk/path.zsh.inc"
+# source "/Users/Jinchun/Development/google-cloud-sdk/path.zsh.inc"
 
-ulimit -n 500000 unlimited
+# boostinsider
+alias boostinsider_server="ssh -o ProxyCommand='nc -x localhost:8889 %h %p' -o ServerAliveInterval=60 -i ~/.ssh/boostinsider-prod.pem ubuntu@35.164.144.3"
+alias es_boostinsider="~/Development/boostinsider/es-boostinsider/bin/elasticsearch"
+alias kibana="~/Development/boostinsider/kibana/bin/kibana"
+
+# sudo sysctl -w kern.maxfiles=65536
+# sudo sysctl -w kern.maxfilesperproc=65536
+ulimit -n 65536 200000
