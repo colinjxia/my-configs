@@ -1,28 +1,73 @@
 {
     "workbench.startupEditor": "newUntitledFile",
     "editor.fontFamily": "Source Code Pro",
-    "editor.fontSize": 15.3,
+    "editor.fontSize": 14.9,
+    "terminal.integrated.fontSize": 13,
     "editor.minimap.enabled": true,
     "editor.renderIndentGuides": true,
     "editor.scrollBeyondLastLine": false,
     "editor.tabSize": 4,
+    "editor.detectIndentation": false,
+    "editor.minimap.showSlider": "always",
     "vsicons.dontShowNewVersionMessage": true,
     "workbench.sideBar.location": "left",
     "window.zoomLevel": 0,
     "window.nativeTabs": true,
-    "workbench.colorTheme": "Atom One Dark",
-    "workbench.iconTheme": "vscode-icons",
-
+    "window.title": "${activeEditorMedium}${separator}${rootName}",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.editor.tabSizing": "shrink",
+    "editor.suggestSelection": "recentlyUsedByPrefix",
+    
     // Number of spaces it should use per tab
     // "prettier.tabWidth": 4,
-
     // "beautify.config": {
     //     "e4x": true,
     //     "brace_style": "collapse,preserve-inline",
     //     "keep_array_indentation": false
     // },
     "typescript.check.npmIsInstalled": false,
-    "files.associations": {
-        "*.js": "javascriptreact"
-    }
+    // "files.associations": {
+    //     "*.js": "javascriptreact"
+    // }
+    "workbench.colorTheme": "Atom One Dark",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+    },
+    "editor.quickSuggestionsDelay": 0,
+    "highlight-matchingsu-tag.highlightSelfClosing": true,
+    "highlight-matching-tag.leftStyle": {
+        "borderWidth": "0 0 0 1.5px"
+      },
+    
+      // Style to use for right side of tag
+      "highlight-matching-tag.rightStyle": {
+        "borderWidth": "0 1.5px 0 0"
+    },
+    "workbench.panel.location": "bottom",
+    "workbench.iconTheme": "vscode-icons",
+    "sync.gist": "d6f47b9f8f1ce06757718de9aeb0a32a",
+    "sync.lastUpload": "2018-04-04T02:50:10.930Z",
+    "sync.autoDownload": false,
+    "sync.autoUpload": false,
+    "sync.lastDownload": "",
+    "sync.forceDownload": false,
+    "sync.anonymousGist": false,
+    "sync.host": "",
+    "sync.pathPrefix": "",
+    "sync.quietSync": false,
+    "sync.askGistName": false,
+    "git.autofetch": true,
+    "workbench.statusBar.visible": true,
+    "git.confirmSync": false,
+    // "workbench.editor.showTabs": false
+    // "git.enabled": false
+
+    "eggjs.snippet.fnStyle": "async",
+    "auto-close-tag.SublimeText3Mode": true,
+    "auto-close-tag.fullMode": true,
+    "sync.removeExtensions": true,
+    "sync.syncExtensions": true
 }
